@@ -1,0 +1,45 @@
+{
+  "name": "pcf-vscode-extension",
+  "version": "0.0.1",
+  "description": "Auto-complete snippets for PowerApps Component Framework development",
+  "displayName": "PowerApps Component Framework Auto-complete",
+  "publisher": "phoenixinobi",
+  "icon": "images/pcf.png",
+  "galleryBanner": {
+    "theme": "light"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoenixinobi/pcf-vscode-extension.git"
+  },
+  "engines": {
+    "vscode": "^1.38.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "pcf",
+    "powerapps",
+    "powerapps component framework",
+    "vscode-extension"
+  ],
+  "author": "phoenixinobi",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/phoenixinobi/pcf-vscode-extension/issues"
+  },
+  "homepage": "https://github.com/phoenixinobi/pcf-vscode-extension#readme",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/component.json"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/manifest.json"
+      }
+    ]
+  }
+}

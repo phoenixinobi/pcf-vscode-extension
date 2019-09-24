@@ -1,0 +1,23 @@
+{
+	"<manifest> node": {
+		"prefix": "pcfman",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\" ?>",
+			"<manifest>",
+			"\t",
+			"</manifest>"
+		],
+		"description": "Create <manifest> node"
+	},
+	"<feature-usage> node": {
+		"prefix": "pcfmanfu",
+		"body": [
+			"<feature-usage>",
+			"\t<uses-feature name=\"\" required=\"\" />",
+			"\t",
+			"</feature-usage>"
+		],
+		"description": "Create <feature-usage> node"
+	}
+
+}
