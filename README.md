@@ -26,6 +26,7 @@ Below is a list of all available snippets and the triggers of each one. The **â‡
 
 
 #### Component
+TODO:
 
 #### Manifest
 | Trigger  | Content |
