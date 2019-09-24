@@ -17,16 +17,20 @@ Alternatively you can open the extensions panel and search for 'PowerApps Compon
 
 ## Supported languages (file extensions)
 
-* TypeScript (.ts)
-* TypeScript Manifest (.xml)
+* TypeScript (.ts) for component
+* XML (.xml) for manifest
 
 ## Snippets
 
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
+
+### Component
+
+### Manifest
 | Trigger  | Content |
 | -------: | ------- |
-| `pcfman→` | `manifest node` |
+| `pcfman→` | `<manifest> node` |
 
 
 ## License
