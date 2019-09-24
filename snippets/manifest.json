@@ -1,23 +1,114 @@
 {
 	"<manifest> node": {
-		"prefix": "pcfman",
+		"prefix": "pcfm",
 		"body": [
 			"<?xml version=\"1.0\" encoding=\"utf-8\" ?>",
 			"<manifest>",
-			"\t",
+			"\t<control namespace=\"$1\" constructor=\"$2\" version=\"$3\" display-name-key=\"$4\" description-key=\"$5\" control-type=\"$6\" preview-image=\"$7\">",
+			"\t\t$0",
+		   	"\t</control>",
 			"</manifest>"
 		],
 		"description": "Create <manifest> node"
 	},
+	"<data-set> node": {
+		"prefix": "pcfmds",
+		"body": [
+			"<data-set name=\"$1\" display-name-key=\"$2\" cds-data-set-options=\"displayCommandBar:$3;displayViewSelector:$4;displayQuickFindSearch:$5\" description-key=\"$6\">$7",
+			"</data-set>$0"
+		],
+		"description": "Create <data-set> node"
+	},
+	"<property> node": {
+		"prefix": "pcfmp",
+		"body": [
+			"<property name=\"$1\" display-name-key=\"$2\" description-key=\"$3\" of-type-group=\"$4\" of-type=\"$5\" usage=\"$6\" required=\"$7\" default-value=\"$8\" />$0"
+		],
+		"description": "Create <property> node"
+	},
+	"<property-set> node": {
+		"prefix": "pcfmps",
+		"body": [
+			"<property-set name=\"$1\" display-name-key=\"$2\" description-key=\"$3\" of-type-group=\"$4\" of-type=\"$5\" usage=\"$6\" />$0"
+		],
+		"description": "Create <property-set> node"
+	},
+	"<resources> node": {
+		"prefix": "pcfmr",
+		"body": [
+			"<resources>",
+			"\t<code path=\"$1.js\" order=\"1\" />",
+		  	"\t<css path=\"$2.css\" order=\"1\" />$3",
+			"</resources>$0"
+		],
+		"description": "Create <resources> node"
+	},
+	"<code> node": {
+		"prefix": "pcfmrcd",
+		"body": [
+			"<code path=\"$1.js\" order=\"$2\" />$0"
+		],
+		"description": "Create <code> node"
+	},
+	"<css> node": {
+		"prefix": "pcfmrcs",
+		"body": [
+		  	"<css path=\"$1.css\" order=\"$2\" />$0"
+		],
+		"description": "Create <css> node"
+	},
+	"<html> node": {
+		"prefix": "pcfmrht",
+		"body": [
+		  	"<html path=\"$1.html\" order=\"$2\" />$0"
+		],
+		"description": "Create <html> node"
+	},
+	"<resx> node": {
+		"prefix": "pcfmrht",
+		"body": [
+		  	"<resx path=\"$1.resx\" order=\"$2\" />$0"
+		],
+		"description": "Create <resx> node"
+	},
+	"<img> node": {
+		"prefix": "pcfmrim",
+		"body": [
+		  	"<img path=\"$1\" />$0"
+		],
+		"description": "Create <img> node"
+	},
+	"<type-group> node": {
+		"prefix": "pcfmtg",
+		"body": [
+			"<type-group name=\"$1\">",
+			"\t<type>$2</type>$3",
+			"</type-group>$0"
+		],
+		"description": "Create <type-group> node"
+	},
 	"<feature-usage> node": {
-		"prefix": "pcfmanfu",
+		"prefix": "pcfmfu",
 		"body": [
 			"<feature-usage>",
-			"\t<uses-feature name=\"\" required=\"\" />",
-			"\t",
-			"</feature-usage>"
+			"\t<uses-feature name=\"$1\" required=\"$2\" />$3",
+			"</feature-usage>$0"
 		],
 		"description": "Create <feature-usage> node"
-	}
+	},
+	"<uses-feature> node": {
+		"prefix": "pcfmuf",
+		"body": [
+			"<uses-feature name=\"$1\" required=\"$2\" />$0"
+		],
+		"description": "Create <uses-feature> node"
+	},
 
+	"<type> node": {
+		"prefix": "pcfmt",
+		"body": [
+			"<type>$1</type>$0"
+		],
+		"description": "Create <type> node"
+	}
 }
