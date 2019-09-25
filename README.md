@@ -24,7 +24,6 @@ Alternatively you can open the extensions panel and search for 'PowerApps Compon
 
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
-
 #### Component
 TODO:
 
